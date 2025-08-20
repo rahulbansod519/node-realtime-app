@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "preinstall": "npm config set unsafe-perm true && npm config set legacy-peer-deps true"
+},
   "dependencies": {
     "express": "^4.18.2",
     "pg": "^8.11.3",
